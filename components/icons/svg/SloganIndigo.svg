@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="68mm"
+   viewBox="0 0 252.00001 81.59999"
+   version="1.1"
+   id="svg2597"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2594">
+    <linearGradient
+       id="linearGradient34890">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop34888" />
+    </linearGradient>
+    <rect
+       x="113.37169"
+       y="435.29129"
+       width="566.85846"
+       height="271.5322"
+       id="rect8754" />
+    <linearGradient
+       xlink:href="#linearGradient34890"
+       id="linearGradient34892"
+       x1="115.87109"
+       y1="555.04309"
+       x2="655.53754"
+       y2="555.04309"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.50444153,0,0,0.71653284,-53.507232,-302.73185)"
+       id="text8752"
+       style="font-style:normal;font-weight:normal;font-size:64px;line-height:0.75;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8754);fill:#7f2aff;fill-opacity:1;stroke:none;stroke-width:3.26929;stroke-miterlimit:4;stroke-dasharray:none"><tspan
+         x="113.37109"
+         y="477.68016"
+         id="tspan100218"><tspan
+           style="font-family:'Bowlby One SC';-inkscape-font-specification:'Bowlby One SC';stroke:#ffffff"
+           id="tspan100216">Dein Treff 
+</tspan></tspan><tspan
+         x="113.37109"
+         y="530.01551"
+         id="tspan100222"><tspan
+           style="font-family:'Bowlby One SC';-inkscape-font-specification:'Bowlby One SC';stroke:#ffffff"
+           id="tspan100220">in Freiburg!!!</tspan></tspan></text>
+  </g>
+</svg>

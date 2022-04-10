@@ -1,0 +1,460 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin:0px;
+  height:100%;
+}
+
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+
+
+
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  &:before{
+    content:'';
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
+     background: #D3D3D3;
+    background-image: url("/bg.jpg");
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.text-shadow{
+  text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+}
+
+.adjacent-post{
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+  }
+  &:hover{
+    & .arrow-btn{
+      width: 60px;
+    }
+  }
+}
+
+.react-multi-carousel-list {
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+    &:hover{
+      width: 60px;
+    }
+  }
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply pt-8 mt-12 border-t border-gray-200 dark:border-slate-100;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+@layer components {
+  .hr {
+    @apply leading-[1em] relative outline-0 border-0 text-center h-[1.5em] opacity-90
+  }
+  .hr::before {
+    @apply absolute w-full h-[3px] left-0 top-1/2 content-[''] bg-gradient-to-r from-transparent via-slate-100 to-transparent
+  }
+}
+
+
+/* architects-daughter-regular - latin */
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+    src: local(''),
+       url('../public/fonts/architects-daughter-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../public/fonts/architects-daughter-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../public/fonts/architects-daughter-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../public/fonts/architects-daughter-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../public/fonts/architects-daughter-v17-latin-regular.svg#ArchitectsDaughter') format('svg'); /* Legacy iOS */
+}
+
+/*-------------------------- CSS Footer -------------------------------------------------------*/
+
+.app__footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(146, 64, 14) ;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center  ;
+  direction: row;
+  justify-content: center;
+  align-items: flex-center;
+
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.app__footer-links_contact,
+.app__footer-links_logo,
+.app__footer-links_work {
+  flex: 2;
+  margin: 1rem;
+  text-align: center;
+  background-color: inherit;
+}
+
+.app__footer-links_logo img:first-child {
+  width: 8vw;
+  margin-bottom: 0.75rem;
+  margin-right: auto;
+  margin-left:  auto;
+}
+
+
+.app__footer-links_work p:nth-child(2n + 1) {
+  margin-bottom: .2 rem;
+  color: #fafafa
+}
+
+.app__footer-links_icons {
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.app__footer-links_icons svg {
+  color: #393939 ;
+  margin: 0.5rem;
+  font-size: 1.666rem;
+  cursor: pointer;
+}
+
+.app__footer-links_icons svg:hover {
+  color: var(--color-golden);
+  color: #fafafa;
+}
+
+.app__footer-headtext {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-size: 32px;
+  line-height: 41.6px;
+  margin-bottom: 1rem;
+  color: #ffcc00;
+}
+
+.footer__copyright {
+  margin-top: 3rem;
+  color: white;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__footer-headtext { 
+      font-size: 51px;
+      line-height: 61.6px;
+      
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__footer-links {
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .app__footer-links_contact,
+  .app__footer-links_logo,
+  .app__footer-links_work {
+      margin: 2rem 0;
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__footer {
+      padding: 0 0 rem 0;
+      
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .app__footer-links_logo img:first-child {
+      width: 80%;
+  }
+}
+
+
+/*-------------------------- CSS Newsletter -------------------------------------------------------*/
+
+.app__newsletter {
+  padding: 2rem 4rem;
+  border: 1px solid #fafafa
+}
+
+.app__newsletter-heading {
+  text-align: center;
+}
+
+.app__newsletter-input {
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.app__newsletter-input input {
+  width: 620px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: var(--font-base);
+  color: var(--color-white);
+  
+  margin-right: 2rem;
+  padding: 0.75rem 1rem;
+  background-color: #fafafa);
+}
+
+.app__newsletter-input button {
+  width: max-content;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__newsletter-input input {
+      font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .app__newsletter-input {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .app__newsletter-input input {
+      margin: 0 0 2rem 0;
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__newsletter {
+      padding: 2rem 0;
+      border: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .app__newsletter-heading h1 {
+      font-size: 32px;
+      line-height: 50px;
+  }
+}
+
+/*-------------------------- CSS Overlay -------------------------------------------------------*/
+
+.app__footerOverlay {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.app__footerOverlay-black {
+  height: 25%;
+  background-color: #750b0b
+}
+
+.app__footerOverlay-img {
+  height: 75%;
+}
+
+/*-------------------------- Carousel -------------------------------------------------------*/
+
+body {
+  margin: 0;
+ background-color: #0F172A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 5rem;
+  }
+
+.number-slide1 {
+  background: url('/Impress01.jpg') no-repeat;
+  background-size: cover;
+  
+}
+
+.number-slide2 {
+  background: url('/Impress02.jpg') no-repeat;
+  background-size:cover;
+}
+
+.number-slide3 {
+  background: url('/Impress03.jpg') no-repeat;
+  background-size:cover;
+}
+
+.number-slide4 {
+  background: url('/Impress04.jpg') no-repeat;
+  background-size:cover;
+}
+
+.number-slide5 {
+  background: url('/Impress05.jpg') no-repeat;
+  background-size:cover;
+}
+.number-slide6 {
+  background: url('/Impress06.jpg') no-repeat;
+  background-size:cover;
+}
+
+
+@layer components {.headingA {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    font-family: 'Architects Daughter';
+  }
+  .headingB {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffcc00;
+    font-family: 'Architects Daughter';
+  }
+  .headingc {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+    font-family: 'Architects Daughter';
+  }
+
+  .headingD {
+    -webkit-text-stroke-width: .66px;
+    -webkit-text-stroke-color: #595959;
+    font-family: 'Architects Daughter';
+    font-weight: extrabold;
+  }
+
+  .newspaperA {
+    columns: 133px 2;
+    color: white;
+    font-family: 'Architects Daughter';
+  }
+
+  .newspaper {
+    columns: 166px 2;
+    column-gap: 6rem;
+    line-height: 0.66rem;
+    color: white;
+    font-family: 'Architects Daughter';
+    column-rule: thin inset orange;
+  }
+
+  .newspaperC {
+    columns: 66px 3;
+    column-gap: 6rem;
+    line-height: 0.66rem;
+    color: white;
+    font-family: 'Architects Daughter';
+    column-rule: thin inset orange;
+  }
+  .newspaperD {
+    columns: 66px 1;
+    column-gap: 6rem;
+    line-height: 0.66rem;
+    color: white;
+    font-family: 'Architects Daughter';
+    column-rule: thin inset orange;
+  }
+
+  .nobgimg {
+    background-image: url('../public/Hero6.png');
+    background-size:  0 ;
+}
+
+}
+
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
